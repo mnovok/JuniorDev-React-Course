@@ -1,0 +1,38 @@
+.abilities {
+    background-color: rgb(223, 70, 141);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.abilitiesContainer {
+    align-items: flex-start;
+    margin-bottom: 5%;
+}
+
+.abilitiesContainer h1 {
+    font-size: 36px;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skillName{
+    bottom: 55px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(221, 151, 249)
+}

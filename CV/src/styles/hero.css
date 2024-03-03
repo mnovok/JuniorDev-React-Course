@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(246, 235, 240);
+    margin: 0;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: "Prompt", sans-serif;
+    overflow-x: hidden;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 400px;
+    position: relative;
+    justify-content: space-between;
+    background: rgb(223, 70, 141);
+}
+
+/* .curve {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: rgb(246, 235, 240);
+    transform: translate(95%, -21%);
+}
+
+.curve::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 58%;
+    height: 95%;
+    background-color: rgb(223, 70, 141);
+    transform: translate(-5%, -20%);
+    z-index: 2;
+} */
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60%;
+  padding: 80px;
+  margin-left: 60px;
+}
+
+.nameContainer > h1 {
+    font-size: 38px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.nameContainer > h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.nameContainer > h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.heroImageContainer {
+    flex-shrink: 0;
+    padding-right: 50px;
+    margin-right: 100px;
+    z-index: 1;
+}
+
+.heroImageContainer img {
+    max-width: 100%; 
+    max-height: 100%;  
+}
+
+.custom-shape-divider-bottom-1709485320 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709485320 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.8px);
+    height: 378px;
+}
+
+.custom-shape-divider-bottom-1709485320 .shape-fill {
+    fill: rgb(246, 235, 240);
+}
+
+@media screen and (max-width: 768px) {
+    .heroContainer {
+        flex-direction: column-reverse;
+    }
+
+    .nameContainer,
+    .heroImageContainer {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .heroImageContainer {
+        order: -1; 
+    }
+}
