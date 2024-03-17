@@ -7,12 +7,6 @@ interface TimerProps {
     setTimerValue: React.Dispatch<React.SetStateAction<number>>;
 }
 
-function formatTime(time: number) {
-    const minutes = Math.floor(time / 60000);
-    const seconds = Math.floor((time / 1000) % 60);
-    return `${("0" + minutes).slice(-2)}:${("0" + seconds).slice(-2)}`;
-  }
-
   const Timer: React.FC<TimerProps> = ({ setTimerValue  }) => {
     const currentDate = new Date();
     const [time, setTime] = useState(0);
