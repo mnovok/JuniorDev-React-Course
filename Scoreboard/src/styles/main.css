@@ -1,0 +1,125 @@
+body {
+    background-image: url('../assets/football.jpg');
+    background-size: cover;
+    opacity: 80%;
+}
+
+.mainWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    color: darkslategrey;
+    border-radius: 5%;
+    box-shadow: black;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px 35px;
+    width: 90%; 
+    max-width: 960px;
+    height: 90%; 
+    max-height: 960px;
+}
+
+.scoreboardContainer {
+    display: flex;
+}
+
+.goalEvents {
+    width: 450px;
+    margin-right: 250px;
+    background-color: rgba(77, 77, 77, 0.5);
+    border-radius: 20px;
+}
+
+.goalEvents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.goalEventsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+.goalEvents h3 {
+    margin-top: 35px;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px; 
+    gap: 50px;
+}
+
+.team {
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.score h2 {
+    margin: 0; 
+    font-size: 24px;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 10px; 
+}
+
+
+.btn {
+    background-color: aliceblue;
+    border-color: darkslategrey;
+    color: darkslategrey;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: large;
+}
+
+.btn:hover {
+    background-color: rgb(190, 204, 101);
+}
+
+.timerButton {
+    background-color: aliceblue;
+    color: darkslategray;
+}
+
+.timerButton:hover {
+    background-color: rgb(190, 204, 101);
+}
+
+.timerWrapper h4 {
+    color: rgb(190, 204, 101);
+}
+
+@media screen and (max-width: 768px) {
+    .scoreboardContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .goalEvents {
+      order: 2; 
+    }
+
+    .mainWrapper {
+        width: 80%; 
+      }
+  }
