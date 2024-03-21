@@ -1,6 +1,7 @@
 body {
     background-color: darksalmon;
     color: rgb(103, 113, 123);
+    font-family: "Sofia Sans", sans-serif;
 }
 
 .formWrapper {
@@ -16,13 +17,13 @@ body {
     box-shadow: 0 10px 30px rgb(141, 73, 25) ;
 }
 
-h3 {
+.header h3 {
     display: inline; 
     padding: 10px; 
-    margin: 0; 
+    margin-left: 40px;
 }
 
-span {
+.header span {
     margin-left: 5px; 
     color: midnightblue;
 }
@@ -36,18 +37,17 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
 }
 
 .inputWrapper {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .label {
     display: block;
     margin-bottom: 5px;
     color: midnightblue;
-    margin-right: 150px;
+    margin-right: 260px;
 }
 
 .labelLarge {
@@ -55,12 +55,12 @@ span {
     margin-bottom: 8px;
     color: midnightblue;
     font-weight: bold;
-    margin-right: 165px;
+    margin-right: 270px;
 }
 
 .inputField {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -68,4 +68,34 @@ span {
     background-color: rgb(231, 231, 231);
     color: midnightblue;
     margin-bottom: 10px;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 10px; 
+}
+
+.radioLabel {
+    margin-right: 100px; 
+}
+
+#paymentTitle {
+    white-space: nowrap;
+    margin-bottom: 8px;
+    color: midnightblue;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+.checkboxWrapper {
+    margin-right: 110px;
+}
+
+#agreementInput {
+    margin-right: 10px;
+}
+
+.detailsWrapper {
+    text-align: left;
 }

@@ -6,15 +6,27 @@ interface FormData {
     email: string;
   };
   address: {
-    firstName: string;
+    name: string;
     address: string;
+    country: string;
   };
+  payment: {
+    method: string;
+  };
+  agreement: {
+    accepted: string;
+  }
 }
 
 interface FormContextType {
   formData: FormData;
   updateContact: (data: Partial<FormData['contact']>) => void;
+  updateName: (firstName: string) => void;
+  updateCountry: (country: string) => void;
   updateAddress: (data: Partial<FormData['address']>) => void;
+  updatePayment: (data: Partial<FormData['payment']>) => void;
+  updateAgreement: (data: Partial<FormData['agreement']>) => void;
+  getAgreement: () => string;
 }
 
 const FormContext = createContext<FormContextType | undefined>(undefined);
@@ -24,7 +36,10 @@ export const useFormContext = () => {
   if (!context) {
     throw new Error('useFormContext must be used within a FormProvider');
   }
-  return context;
+  return {
+    ...context,
+    getAgreement: () => context.formData.agreement.accepted
+  };
 };
 
 export const FormProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -33,9 +48,16 @@ export const FormProvider: React.FC<{ children: React.ReactNode }> = ({ children
       email: '',
     },
     address: {
-      firstName: '',
+      name: '',
       address: '',
+      country: 'Croatia',
     },
+    payment: {
+      method: 'Cash on Delivery',
+    },
+    agreement: {
+      accepted: 'No',
+    }
   });
 
   const updateContact = (data: Partial<FormData['contact']>) => {
@@ -52,8 +74,40 @@ export const FormProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }));
   };
 
+  const updateName = (name: string) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      address: { ...prevData.address, name },
+    }));
+  };
+
+  const updateCountry = (country: string) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      address: { ...prevData.address, country },
+    }));
+  };
+
+  const updatePayment = (data: Partial<FormData['payment']>) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      payment: { ...prevData.payment, ...data },
+    }));
+  };
+
+  const updateAgreement = (data: Partial<FormData['agreement']>) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      agreement: { ...prevData.agreement, ...data },
+    }));
+  };
+
+  const getAgreement = () => {
+    return formData.agreement.accepted;
+  };
+
   return (
-    <FormContext.Provider value={{ formData, updateContact, updateAddress }}>
+    <FormContext.Provider value={{ formData, updateContact, updateAddress, updateName, updateCountry, updatePayment, updateAgreement, getAgreement }}>
       {children}
     </FormContext.Provider>
   );

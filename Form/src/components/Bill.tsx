@@ -5,8 +5,14 @@ const Bill = () => {
 
     return (
         <div className="billWrapper">
-            <h2>Bill</h2>
-            <p>Contact Email: {formData.contact.email}</p>
+            <h2>Bill Details</h2>
+            <div className="detailsWrapper">
+                <p>Email: {formData.contact.email}</p>
+                <p>Name: {formData.address.name}</p>
+                <p>Address: {formData.address.address}</p>
+                <p>Country: {formData.address.country}</p>
+                <p>Payment: {formData.payment.method}</p>
+            </div>
         </div>
     );
 };

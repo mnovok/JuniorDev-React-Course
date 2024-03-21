@@ -1,5 +1,4 @@
 import "../styles/main.css";
-import { useState, ChangeEvent } from "react";
 import { useFormContext } from "./FormContext";
 
 const Contact = () => {
