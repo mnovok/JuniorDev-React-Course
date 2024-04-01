@@ -1,1 +1,1 @@
-![localhost_5173_](https://github.com/mnovok/JuniorDev-React-Course/assets/92404788/c046c7d5-e6d2-42a3-9b48-d1b8024b3365)
+![localhost_5173_ (1)](https://github.com/mnovok/JuniorDev-React-Course/assets/92404788/530b5780-f4da-4355-af35-89c2ccc8576d)
