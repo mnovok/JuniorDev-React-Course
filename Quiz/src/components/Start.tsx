@@ -36,7 +36,7 @@ const Start: React.FC<Props> = (props) => {
         setSelectedDifficulty(event.target.value);
     }
   
-    const handleQuestionNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleQuestionNumberChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const value = parseInt(event.target.value);
         setSelectedQuestionNumber(value);
     }
@@ -84,17 +84,19 @@ const Start: React.FC<Props> = (props) => {
     
                     <div className="inputGroup">
                         <label htmlFor="questionNumber">Number of Questions</label>
-                        <input
+                        <select
                             id="questionNumber"
-                            type="range"
-                            className="rangeStart"
+                            className="selectStart"
                             value={selectedQuestionNumber}
                             onChange={handleQuestionNumberChange}
-                            min={5}
-                            max={30}
-                        />
-                        <span>{selectedQuestionNumber}</span>
-                    </div>
+                        >
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div> 
+
                     <button className="buttonStart" type="submit">
                         Start
                     </button>
