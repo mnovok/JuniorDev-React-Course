@@ -73,6 +73,7 @@ const AddItem = ({ updateClothes }: { updateClothes: any }) => {
              });
     }
 
+
     return (
         <div className="addWrapper">
             <h2>Add an item</h2>
