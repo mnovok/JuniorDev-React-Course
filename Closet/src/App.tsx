@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Table from './components/Table';
 import AddItem from './components/AddItem';
+import Filter from './components/Filter';
 
 export interface Clothes {
   id: string,
@@ -15,6 +16,7 @@ export interface Clothes {
 
 function App() {
   const [clothes, setClothes] = useState<Clothes[]>([]);
+  const [filter, setFilter] = useState('');
 
   useEffect(() => {
     axios
@@ -31,8 +33,9 @@ function App() {
   return (
    <div className="App">
     <h1>Personal Closet App</h1>
-      <AddItem />
-      <Table clothes={clothes} updateClothes={setClothes}/>
+      <AddItem item={setClothes}/>
+      <Filter selectedFilter={filter} setSelectedFilter={setFilter}/>
+      <Table clothes={clothes.filter(item => filter === '' || item.type === filter)} updateClothes={setClothes}/>
    </div>
   )
 }

@@ -2,7 +2,7 @@
   "clothes": [
     {
       "id": "1",
-      "type": "Hlače",
+      "type": "Pants",
       "size": "M",
       "colour": "#2d2c52",
       "image": "https://i5.walmartimages.com/seo/Haite-Women-Dress-Lounge-Pants-Business-Elastic-Waist-Casual-Stretch-Work-Trousers-Slacks-with-4-Pockets_60605c30-9161-4de0-a845-454d8cafbf9b.225adc236c8ab4067f2cedfe7b996a09.jpeg",
@@ -10,7 +10,7 @@
       "": "#ffffff"
     },
     {
-      "type": "Košulja",
+      "type": "Blouse",
       "size": "S",
       "colour": "#d13232",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpm5ARNH67GryddzlFsHEuLTsbnOx4k7aviyNpoA68nLkf9w-ttE7RcnZoxPBx6c_es4&usqp=CAU",
@@ -19,7 +19,7 @@
     },
     {
       "id": "3",
-      "type": "Suknja",
+      "type": "Skirt",
       "size": "M",
       "colour": "#232326",
       "image": "https://www.maison-alaia.com/49/49769164tt_999_f.jpg",
@@ -27,7 +27,7 @@
     },
     {
       "id": "4",
-      "type": "Košulja",
+      "type": "Blouse",
       "size": "M",
       "colour": "#208a56",
       "image": "https://img01.ztat.net/article/spp-media-p1/b308fa9022004cbb97128d426a5585fe/f19cedbf25cb482aa30f347347beabd1.jpg?imwidth=762&filter=packshot",
@@ -35,18 +35,41 @@
     },
     {
       "id": "5",
-      "type": "Hlače",
+      "type": "Pants",
       "size": "XL",
       "colour": "#ff527d",
       "image": "https://www.liena.co.uk/cdn/shop/products/Pink_trousers_01_800x.jpg?v=1646841808",
-      "date": "2024-4-4",
-      "": "#ff0080"
+      "date": "2024-4-4"
+    },
+    {
+      "id": "4c6d",
+      "type": "Skirt",
+      "size": "XS",
+      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2023/09/16/650654e7c5df6c302b815f0f/m_wp_650655f581078a525d5963d2.webp",
+      "colour": "#844f24",
+      "date": "2024-04-03"
+    },
+    {
+      "id": "1c65",
+      "type": "Blouse",
+      "size": "S",
+      "image": "https://static.e-stradivarius.net/5/photos4/2024/V/0/1/p/7343/202/702/7343202702_2_4_1.jpg?t=1689848347404&impolicy=stradivarius-itxmediumhigh&imwidth=480&imformat=chrome&imdensity=2.625",
+      "colour": "",
+      "date": "2024-05-10"
+    },
+    {
+      "id": "b6bf",
+      "type": "Pants",
+      "size": "L",
+      "image": "https://img.youtube.com/vi/i9jhxOwcaw0/0.jpg",
+      "colour": "",
+      "date": "2024-04-24"
     }
   ],
   "types": [
-    "Hlače",
-    "Košulja",
-    "Suknja"
+    "Pants",
+    "Blouse",
+    "Skirt"
   ],
   "sizes": [
     "XS",
