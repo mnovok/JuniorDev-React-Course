@@ -1,0 +1,58 @@
+{
+  "clothes": [
+    {
+      "id": "1",
+      "type": "Hlače",
+      "size": "M",
+      "colour": "#2d2c52",
+      "image": "https://i5.walmartimages.com/seo/Haite-Women-Dress-Lounge-Pants-Business-Elastic-Waist-Casual-Stretch-Work-Trousers-Slacks-with-4-Pockets_60605c30-9161-4de0-a845-454d8cafbf9b.225adc236c8ab4067f2cedfe7b996a09.jpeg",
+      "date": "2024-4-1",
+      "": "#ffffff"
+    },
+    {
+      "type": "Košulja",
+      "size": "S",
+      "colour": "#d13232",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqpm5ARNH67GryddzlFsHEuLTsbnOx4k7aviyNpoA68nLkf9w-ttE7RcnZoxPBx6c_es4&usqp=CAU",
+      "date": "2024-4-2",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "type": "Suknja",
+      "size": "M",
+      "colour": "#232326",
+      "image": "https://www.maison-alaia.com/49/49769164tt_999_f.jpg",
+      "date": "2024-4-2"
+    },
+    {
+      "id": "4",
+      "type": "Košulja",
+      "size": "M",
+      "colour": "#208a56",
+      "image": "https://img01.ztat.net/article/spp-media-p1/b308fa9022004cbb97128d426a5585fe/f19cedbf25cb482aa30f347347beabd1.jpg?imwidth=762&filter=packshot",
+      "date": "2024-4-3"
+    },
+    {
+      "id": "5",
+      "type": "Hlače",
+      "size": "XL",
+      "colour": "#ff527d",
+      "image": "https://www.liena.co.uk/cdn/shop/products/Pink_trousers_01_800x.jpg?v=1646841808",
+      "date": "2024-4-4",
+      "": "#ff0080"
+    }
+  ],
+  "types": [
+    "Hlače",
+    "Košulja",
+    "Suknja"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+  ]
+}
